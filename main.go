@@ -6,6 +6,6 @@ import (
 )
 
 func main() {
-	fmt.Println("Starting aplication2...")
+	fmt.Println("Starting aplication23...")
 	server.StartServer()
 }
