@@ -1,0 +1,13 @@
+pm.test("Status test", function () {
+    pm.response.to.have.status(200);
+});
+
+pm.test("Returns service", function () {
+    let jsonData = pm.response.json();
+    pm.expect(jsonData.service).to.eql("GO server")
+});
+
+pm.test("Returns code", function () {
+    let jsonData = pm.response.json();
+    pm.expect(jsonData.code).to.eql(200)
+});

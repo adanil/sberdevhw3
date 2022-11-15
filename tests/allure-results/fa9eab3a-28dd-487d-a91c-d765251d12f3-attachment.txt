@@ -1,0 +1,4 @@
+pm.test("Returns service", function () {
+    let jsonData = pm.response.json();
+    pm.expect(jsonData.message).to.eql("Hello, hw3")
+});
